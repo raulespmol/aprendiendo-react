@@ -10,3 +10,9 @@ body {
 * {
   transition: all 100ms ease-in;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
