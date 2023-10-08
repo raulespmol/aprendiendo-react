@@ -1,21 +1,13 @@
 import './App.css'
+import { FollowCard } from './FollowCard.jsx'
+
 
 export function App () {
   return (
-    <section className="follow-card">
-      <header className="follow-card-header">
-        <img src="https://unavatar.io/raulespmol" alt="Avatar" className="follow-card-avatar"/>
-        <div className="follow-card-info">
-          <strong className="user-name">Raúl Espinoza</strong>
-          <span className="user">@raulespmol</span>
-        </div>
-      </header>
-
-      <aside>
-        <button className="follow-button">
-          Seguir
-        </button>
-      </aside>
-    </section>
+    <div className='card'>
+      <FollowCard userName='Raúl Espinoza M' user='raulespmol' isFollowing={true} />
+      <FollowCard userName='Elon Musk' user='elonmusk' isFollowing />
+      <FollowCard userName='Nino Moonless' user='chayobee' isFollowing={false} />
+    </div>
   )
 }

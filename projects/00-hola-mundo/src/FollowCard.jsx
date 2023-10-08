@@ -1,7 +1,12 @@
-import './FollowCard.css'
+// import './App.css'
 
 export function FollowCard ( {userName, user, isFollowing} ) {
-  const avatarSource = `https://unavatar.io/${user}`;
+const avatarSource = `https://unavatar.io/${user}`;
+const buttonText = isFollowing ? 'Siguiendo' : 'Seguir'
+const buttonClassName = isFollowing ?
+  'follow-button isFollowing' :
+  'follow-button';
+
   return (
     <section className="follow-card">
       <header className="follow-card-header">
@@ -13,8 +18,8 @@ export function FollowCard ( {userName, user, isFollowing} ) {
       </header>
 
       <aside>
-        <button className="follow-button">
-          Seguir
+        <button className={buttonClassName}>
+          {buttonText}
         </button>
       </aside>
     </section>
