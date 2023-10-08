@@ -7,12 +7,9 @@ body {
   min-height: 100vh;
 }
 
-* {
-  transition: all 200ms ease;
-}
-
-.card {
+.cards-container {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 400px;
 }
